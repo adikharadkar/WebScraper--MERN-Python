@@ -1,0 +1,11 @@
+.label {
+    font-size: 19px;
+    text-align: left;
+    color: #121212;
+}
+
+@media (max-width: 600px) {
+    .label {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "webscraper-server-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adikharadkar/WebScraper-Server-Node.git"
+  },
+  "author": "Aditya Kharadkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adikharadkar/WebScraper-Server-Node/issues"
+  },
+  "homepage": "https://github.com/adikharadkar/WebScraper-Server-Node#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.1.0",
+    "mongoose-unique-validator": "^4.0.0",
+    "nodemon": "^2.0.22"
+  }
+}

@@ -1,0 +1,29 @@
+.inputField {
+    width: 350px;
+    height: 35px;
+    margin: 10px;
+    margin-top: 10px;
+    border-bottom: 2px solid #F88379;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    font-size: 16px;
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+}
+
+@media (max-width: 600px) {
+    .inputField {
+        width: 180px;
+        font-size: 13px;
+    }
+    input::placeholder {
+        font-size: 13px;
+    }
+}
