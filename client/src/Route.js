@@ -8,6 +8,7 @@ import NavigationBar from './Components/NavigationBar';
 import JobResultsPage from './Components/JobResultsPage/JobResultsPage';
 import InNavigationBar from './Components/InNavigationBar';
 import Logout from './Components/LogoutPage/Logout';
+import ProfilePage from './Components/ProfilePage/ProfilePage';
 
 const AppRoutes = () => {
     const [jwtToken, setJwtToken] = useState(false)
@@ -26,6 +27,7 @@ const AppRoutes = () => {
                 <Route exact path="/signup" Component={() => <RegistrationPage />} />
                 <Route exact path="/job-results" Component={() => <JobResultsPage />} />
                 <Route exact path="/logout" Component={() => <Logout />} />
+                <Route exact path="/my-profile" Component={() => <ProfilePage />} />
             </Routes>
         </Router>
     );
