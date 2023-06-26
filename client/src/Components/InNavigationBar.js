@@ -17,6 +17,7 @@ const InNavigationBar = () => {
                 <Link to="/" className="nav-link">
                     <h2>Search Jobs</h2>
                 </Link>
+                <Link to="/my-profile" className="nav-link"><h2>My Profile</h2></Link>
                 <Link to="/logout" className="nav-link" onClick={LogoutHandler}><h2>Logout</h2></Link>
             </div>
             </header>

@@ -1,8 +1,17 @@
+.ProfilePage {
+    margin-bottom: 20px;
+}
+
 .profile__job-summary {
     display: flex;
 }
 
-.profile__summary {
+.profile__summary,
+.profile__experience,
+.profile__education,
+.profile__project,
+.profile__skills,
+.profile__certifications {
     text-align: left;
     display: inline-block;
     padding: 20px;
@@ -14,4 +23,34 @@
     padding-left: 20px;
     padding-right: 20px;
     width: 80%;
+}
+
+.profile__header {
+    color: darkslateblue;
+    font-size: 33px;
+}
+
+.profile__project-technologies {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.profile__project-technology-item {
+    border: 1px solid #ebebeb;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.profile__skills-list {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0;
+    width: 90%;
+}
+
+.profile__skills-item {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 10px;
 }
