@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../../Styles/ProfilePage/ProfilePage.css';
+import InputField from '../../InputField';
+import Button from '../../Button';
 
 const ProfileExperience = () => {
+    const [clicked, setClicked] = useState();
+    const editBtnClickedHandler = () => {
+        setClicked(!clicked);
+    }
     return (
         <div className="profile__experience">
-            <span class="material-symbols-outlined update-btn">edit</span>
+            <span class="material-symbols-outlined update-btn" onClick={editBtnClickedHandler}>edit</span>
             <h1 className="profile__header">Experience</h1>
             <h2 className="profile__job-position">Frontend Developer</h2>
             <h3 className="profile__job-company-name">Tata Consultancy Services</h3>
@@ -15,6 +21,9 @@ const ProfileExperience = () => {
                 such as React.js, Node.js, Python, SQL, Javascript, HTML, CSS, etc., with the work simultaneously. Good with
                 communication skills. Top 5 key skills: React.js,Communication Skills,HTML,CSS,Javascript
             </p>
+
+            
+
         </div>
     )
 }
