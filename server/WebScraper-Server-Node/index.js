@@ -30,12 +30,9 @@ app.use(loginRoutes);
 const PORT = 3001;
 
 // Connection to the database
-mongoose.connect(
-    'mongodb+srv://adityakharadkar27:'
-     + encodeURIComponent('Admin@2706')
-      + '@cluster0.ooxgay7.mongodb.net/webScraper?retryWrites=true&w=majority', {
-        useNewUrlParser: true,
-      })
+mongoose..connect("mongodb://localhost:27017/job-posting", {
+    useNewUrlParser: true,
+  })
     .then(() => {
         app.listen(PORT, () => {
             console.log(`Server listening on port ${PORT}`);
